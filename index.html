@@ -23,6 +23,29 @@ nav a.navbar-brand {
 }
 </style>
 <body>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAPnPOXquebKxpKGmwrJLUJtVPN4Y7Wi6k",
+    authDomain: "pwa-web-push-boy.firebaseapp.com",
+    projectId: "pwa-web-push-boy",
+    storageBucket: "pwa-web-push-boy.appspot.com",
+    messagingSenderId: "396765407099",
+    appId: "1:396765407099:web:4aa5a567a27931cbbf3fde",
+    measurementId: "G-J5PS0K616B"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
     <div class="col-12 pt-3 pb-5">
         <div class="alert alert-primary" role="alert">
             <h4 class="alert-heading">Hi there!<i class="far fa-laugh-squint ml-2"></i></h4>
